@@ -11,10 +11,8 @@
 		<typeAlias type="com.teau.biz.domain.AdminVO" alias="admin"></typeAlias>
 	</typeAliases>
 	
-	<!-- Sql Mapper 설정 -->
+	<!-- Sql Mapper 설정 <mapper resource="mappings/admin-mapping.xml" />-->
 	<mappers>
 		<mapper resource="mappings/member-mapping.xml" />
-		<mapper resource="mappings/admin-mapping.xml" />
-
 	</mappers>
 </configuration>

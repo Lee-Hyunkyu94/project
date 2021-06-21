@@ -2,19 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="MemberDAO">
+<mapper namespace="Members">
 
-	<resultMap type="member" id="memberResult">
-		<id property="memberId" column="MEMBER_ID"/>
-		<result property="memberPass" column="MEMBER_PASS"/>
-		<result property="memberName" column="MEMBER_NAME"/>
-		<result property="memberAddress" column="MEMBER_ADDRESS"/>
-		<result property="memberEmail" column="MEMBER_EMAIL"/>
-		<result property="memberPhone" column="MEMBER_PHONE"/>
-		<result property="memberPoint" column="MEMBER_POINT"/>
-		<result property="memberJoindate" column="MEMBER_JOINDATE"/>
-	</resultMap>
-	
+<!-- 
 	<insert id="insertMember">
 	<![CDATA[
 		INSERT INTO MEMBER(MEMBER_ID, MEMBER_PASS, MEMBER_NAME, MEMBER_ADDRESS, MEMBER_EMAIL,MEMBER_PHONE)
@@ -29,7 +19,8 @@
 		WHERE MEMBER_ID = #{memberId}
 		]]>
 	</update>
-	
+	 -->
+	 
 	<!-- <delete id="deleteBoard">
 	<![CDATA[
 		DELETE BOARD 
@@ -38,7 +29,7 @@
 	</delete>	
 	 -->
 	 
-	<select id="getMember">
+	<select id="getMyMember" resultType="HashMap">
 		<![CDATA[
 		SELECT * FROM MEMBER 
 		WHERE MEMBER_ID = #{memberId} and MEMBER_PASS = #{memberPass}

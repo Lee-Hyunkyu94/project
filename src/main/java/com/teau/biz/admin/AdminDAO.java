@@ -12,16 +12,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @Repository
 public class AdminDAO {
-	@Autowired
-	private SqlSessionTemplate mybatis;
 	
-	
-	public AdminVO loginAdmin(AdminVO vo) {
-		System.out.println("mybatis로 loginMember() 기능처리");
-		return (AdminVO) mybatis.selectOne("AdminDAO.loginMember", vo);
-	}
-	
-	
+//	@Autowired
+//	private SqlSessionTemplate mybatis;
+//	
+//	
+//	public AdminVO loginAdmin(AdminVO vo) {
+//		System.out.println("mybatis로 loginMember() 기능처리");
+//		return (AdminVO) mybatis.selectOne("AdminDAO.loginMember", vo);
+//	}
+//	
+//	
 	
 /*
 	  public List<BoardVO> getBoardList(BoardVO vo) {

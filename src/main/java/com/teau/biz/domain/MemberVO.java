@@ -15,5 +15,4 @@ public class MemberVO {
 	private String memberPhone;
 	private int memberPoint;
 	private Date memberJoindate;
-
 }

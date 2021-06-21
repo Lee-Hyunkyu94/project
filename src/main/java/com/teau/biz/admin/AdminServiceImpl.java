@@ -10,11 +10,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 @Service("adminService")
 public class AdminServiceImpl implements AdminService {
-	@Autowired
+	
 	private AdminDAO adminDAO;
 	
 	public AdminVO loginAdmin(AdminVO vo) {
-		return adminDAO.loginAdmin(vo);
+		return null;
+//		return adminDAO.loginAdmin(vo);
 	}
 }
 
