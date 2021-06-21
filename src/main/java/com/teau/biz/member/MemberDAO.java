@@ -29,6 +29,8 @@ public class MemberDAO {
 
 	public MemberVO getMember(MemberVO vo) {
 		System.out.println("mybatis로 getMember() 기능처리");
+		System.out.println(vo.getMemberId());
+		System.out.println(vo.getMemberPass());
 		System.out.println(mybatis);
 		return mybatis.selectOne("MemberDAO.getMember", vo);
 	}
